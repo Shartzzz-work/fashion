@@ -1,11 +1,9 @@
-{% block header %}
-  <header class="header header-{{pageName}}">
-    {% block subheader %}
-      {% include "./subheader/subheader.njk" %}
-    {% endblock %}
+<header class="header header-{{pageName}}">
+  {% block subheader %}
+    {% include "./subheader/subheader.njk" %}
+  {% endblock %}
 
-    {% block navigation %}
-      {% include "./navigation/navigation.njk" %}
-    {% endblock %}
-  </header>
-{% endblock %}
+  {% block navigation %}
+    {% include "./navigation/navigation.njk" %}
+  {% endblock %}
+</header>
