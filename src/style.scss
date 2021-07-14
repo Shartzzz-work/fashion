@@ -1,0 +1,18 @@
+@use 'scss/vars.scss';
+
+@use 'modules/layout/layout.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, Roboto,
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
