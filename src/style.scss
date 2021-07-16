@@ -1,7 +1,6 @@
 @use 'scss/vars.scss';
 @use 'scss/components.scss';
-
-@use 'modules/layout/layout.scss';
+@use 'scss/modules.scss';
 
 * {
   margin: 0;
@@ -14,6 +13,8 @@
 }
 
 .wrapper {
+  position: relative;
   max-width: 1440px;
+  height: 100%;
   margin: 0 auto;
 }

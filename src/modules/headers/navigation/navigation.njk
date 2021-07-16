@@ -1,0 +1,9 @@
+<nav class="navigation wrapper" role="navigation">
+  <ul class="navigation__menu">
+    {% for navigationLink in navigationLinks %}
+      <li class="navigation__menu-item{{ ' active' if (navigationLink == menuLink) }}">
+        <a href="{{ url if (navigationLink == menuLink) }}" class="navigation__menu-link link">{{ navigationLink }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,0 +1,17 @@
+<main class="main main_header">
+  {% block category %}
+    {% include "./category/category.njk" %}
+  {% endblock %}
+
+  {% block products %}
+    {% include "./products/products.njk" %}
+  {% endblock %}
+
+  {% block bannerSale %}
+    {% include "../banners/banner-sale.njk" %}
+  {% endblock %}
+
+  {% block news %}
+    {% include "../news/news.njk" %}
+  {% endblock %}
+</main>

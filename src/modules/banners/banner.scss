@@ -1,0 +1,85 @@
+@use '../../scss/vars.scss';
+
+.banner_home {
+  height: 720px;
+}
+
+.banner {
+  background-image: url(assets/img/banner/top_banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fd8d9b;
+  background-size: cover;
+}
+
+.banner__img {
+  position: absolute;
+  left: 3rem;
+  bottom: 0;
+}
+
+.banner__content {
+  position: absolute;
+  width: 700px;
+  height: 360px;
+  right: 3rem;
+  bottom: 25.72%;
+
+  background-image: url(assets/img/banner/cloud.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: grid;
+  justify-items: center;
+  align-content: center;
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 86px;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+// banner-sale
+
+.banner__sale {
+  height: 380px;
+  background: var(--color-main-medium);
+}
+
+.banner__sale-wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.banner__sale-content {
+  place-self: center;
+  display: grid;
+
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    text-shadow: 5px 4px 0px rgba(0, 0, 0, 0.55);
+    font-size: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  p {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+.banner__sale-img {
+  height: 380px;
+}

@@ -1,1 +1,50 @@
-{% include "./modules/home/home.njk" %}
+{% set lang = 'ru' %}
+
+{% set menuLink = "Главная" %}
+
+{% set pageName = 'home' %}
+{% set url = '/'%}
+{% set userTitle = 'Войти' %}
+{% set cartTitle = 'Корзина: 3' %}
+{% set loginImg = 'user-login.svg' %}
+{% set cartImg = 'cart.svg' %}
+{% set searchImg = 'search.svg' %}
+
+{% set navigationLinks = [
+  "Главная",
+  "Бюстгальтеры",
+  "Трусики",
+  "Колготки, чулки, леггинсы",
+  "Домашняя одежда",
+  "Носки, тапочки, ботфорты",
+  "Корректирующее белье",
+  "Трикотаж",
+  "Эротическое белье",
+  "Купальники",
+  "Детское",
+  "Мужчинам",
+  "Термобелье",
+  "Аксессуары"
+] %}
+
+{% extends "./layout/layout.njk" %}
+
+{% block head %}
+  {% include "./layout/head/head.njk" %}
+{% endblock %}
+
+{% block header %}
+  {% include "./modules/headers/header.njk" %}
+{% endblock %}
+
+{% block banner %}
+  {% include "./modules/banners/banner.njk" %}
+{% endblock %}
+
+{% block main %}
+  {% include "./modules/mains/main.njk" %}
+{% endblock %}
+
+{% block footer %}
+  {% include "./modules/footers/footer.njk" %}
+{% endblock %}

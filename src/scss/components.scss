@@ -2,6 +2,7 @@
 
 .link {
   text-decoration: none;
+  color: unset;
 }
 
 .button {
@@ -9,9 +10,23 @@
   text-decoration: none;
   color: var(--color-text-button);
   text-transform: uppercase;
-  padding: 4%;
+  padding: 15px;
   border-radius: 10px;
   font-size: .9rem;
 
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.397);
+}
+
+.banner__sale-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  text-decoration: none;
+  border: 2px solid #000;
+  height: 50px;
+  text-transform: uppercase;
+  color: #000;
+  justify-self: center;
 }
