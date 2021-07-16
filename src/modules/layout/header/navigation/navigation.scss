@@ -1,0 +1,29 @@
+.navigation__menu {
+  display: flex;
+  justify-content: space-between;
+
+  list-style-type: none;
+}
+
+.navigation__menu-item {
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  padding: 0 1rem;
+  font-size: 0.7rem;
+
+  &:hover {
+    background: var(--color-main-medium);
+  }
+
+  &.active {
+    background: var(--color-main-medium);
+  }
+}
+
+.navigation__menu-link {
+  text-align: center;
+  place-self: center;
+  font-size: 0.7rem;
+  color: #000;
+}

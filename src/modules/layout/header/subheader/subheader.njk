@@ -10,7 +10,11 @@
       </div>
       <div class="subheader__cart">
         <span class="subheader__title">{{cartTitle}}</span>
-        <img src="assets/img/{{cartImg}}" alt="{{cartTitle}}" class="subheader__icon">
+        <div class="subheader__icon">
+          <img src="assets/img/{{cartImg}}" alt="{{cartTitle}}">
+          <span class="subheader__cart-lenght">0</span>
+        </div>
+        {% include "../cart/cart.njk" %}
       </div>
     </div>
   </div>

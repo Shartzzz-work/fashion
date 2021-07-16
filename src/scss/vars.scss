@@ -1,6 +1,10 @@
 :root {
   // цветовой набор
+  --color-white: #fff;
   --color-main-dark: #e86273;
   --color-main-medium: #ffdee2;
   --color-main-light: #fff4f6;
+  --color-text-button: var(--color-white);
+  --color-bg-button: var(--color-main-dark);
+  --color-bg-button-white: var(--color-white);
 }
