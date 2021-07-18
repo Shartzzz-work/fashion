@@ -1,0 +1,79 @@
+@use '../../../scss/vars.scss';
+
+.dropdown {
+  position: relative;
+  height: 35px;
+  width: auto;
+  background: var(--color-white);
+
+  display: -ms-inline-grid;
+  display: -moz-inline-grid;
+  display: inline-grid;
+  border-radius: 0.5rem;
+}
+
+.dropdown__menu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+.dropdown__menu_arrow {
+  width: 0;
+  height: 0;
+  margin-left: 1rem;
+
+  border-top: 0.3rem solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  border-left: 0.3rem solid;
+
+  &.active {
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    border-top: 0.3rem solid;
+
+    border-bottom: 0;
+  }
+}
+
+.dropdown__list {
+  position: absolute;
+  display: none;
+  top: 100%;
+  width: auto;
+  height: auto;
+  white-space: nowrap;
+  z-index: 3;
+  background: inherit;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: #000 1px solid;
+  padding: 1rem;
+
+  &.active {
+    display: grid;
+  }
+
+  &.right {
+    right: 0;
+  }
+
+  input {
+    margin-right: .5rem;
+  }
+}
+
+.dropdown__list-item {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: .5rem;
+  padding: 0 10px;
+
+  &:hover {
+    background: var(--color-main-medium);
+  }
+}

@@ -1,0 +1,13 @@
+<main class="main main_header">
+  {% block shopDescription %}
+    {% include "./shop-description/shop-description.njk" %}
+  {% endblock %}
+
+  {% block filters %}
+    {% include "./filters/filters.njk" %}
+  {% endblock %}
+
+  {% block products %}
+    {% include "./products/products-shop.njk" %}
+  {% endblock %}
+</main>

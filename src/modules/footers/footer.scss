@@ -1,10 +1,5 @@
-.brand__block {
-  height: 130px;
-  width: 100%;
-  background: rgb(201, 110, 110);
-}
-
 footer {
+  bottom: 0;
   display: grid;
   grid-template-columns: 55% 45%;
   grid-template-rows: 50% 40% 10%;

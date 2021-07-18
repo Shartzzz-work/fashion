@@ -1,0 +1,8 @@
+{% macro dropdown(name, checkbox) %}
+<div class="dropdown">
+  <a href="#" class="dropdown__menu link">{{name}}<span class="dropdown__menu_arrow"></span></a>
+  <form class="dropdown__list">
+  <label><input type="checkbox">{{checkbox}}</label>
+  </form>
+</div>
+{% endmacro %}

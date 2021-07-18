@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html dir="auto" lang="{{lang}}">
-{% block head %}
-{% endblock %}
-<body>
+  {% block head %}{% endblock %}
+  <body>
 
-  {% block header %}
-  {% endblock %}
+    {% block header %}{% endblock %}
 
-  {% block banner %}
-  {% endblock %}
+    {% block banner %}{% endblock %}
 
-  {% block main %}
-  {% endblock %}
+    {% block breadcrumbs %}{% endblock %}
 
-  {% block footer %}
-  {% endblock %}
+    {% block main %}
+      {% block brandList %}{% endblock %}
+    {% endblock %}
+    {% block footer %}{% endblock %}
 
-  <script type="module" src="script.js"></script>
-</body>
+    <script type="module" src="{{startPath}}script.js"></script>
+  </body>
 
 </html>

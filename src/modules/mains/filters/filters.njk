@@ -1,0 +1,36 @@
+{% from "../../_components/dropdown/dropdown.njk" import dropdown %}
+
+<div class="shop-filters">
+  <div class="shop-filters__wrapper wrapper">
+    <div class="shop-filters__dropdowns">
+      {{dropdown('Размер', '65H')}}
+      {{dropdown('Бренд', 'KRIS LINE (Польша)')}}
+      {{dropdown('Форма чашки', 'Косточки')}}
+    </div>
+    <div class="shop-filters__common">
+      <div class="shop-filters__common-price">
+        <label>
+          <span>от: </span><input type="text"></label>
+        <label>
+          <span>до: </span><input type="text"></label>
+      </div>
+
+      <div class="dropdown">
+        <a href="#" class="dropdown__menu link">Новинки<span class="dropdown__menu_arrow"></span></a>
+        <div class="dropdown__list right">
+          <a href="#" class='dropdown__list-item link'>Цена по возрастанию</a>
+          <a href="#" class='dropdown__list-item link'>Цена по убыванию</a>
+          <a href="#" class='dropdown__list-item link'>Популярное</a>
+          <a href="#" class='dropdown__list-item link'>Отзывы</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="shop-filters-tags wrapper">
+  Фильтры:
+  <span class="tag">65H <a href="#" class='tag__close'><img src="../assets/img/close-tag.svg" alt=""></a>
+  </span>
+  <span class="tag">KRIS LINE (Польша) <a href="#" class='tag__close'><img src="../assets/img/close-tag.svg" alt=""></a>
+  </span>
+</div>

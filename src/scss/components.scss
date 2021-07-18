@@ -1,9 +1,13 @@
 @use 'vars.scss';
 
+@use '../modules/_components/dropdown/dropdown.scss';
+
 .link {
   text-decoration: none;
   color: unset;
 }
+
+// buttons
 
 .button {
   background: var(--color-bg-button);
@@ -29,4 +33,43 @@
   text-transform: uppercase;
   color: #000;
   justify-self: center;
+}
+
+// inputs
+
+input[type='text'] {
+  // height: 25px;
+  border-radius: .5rem;
+  border: none;
+  padding: .5rem;
+}
+
+// tags
+
+.tag {
+  background: var(--color-tag);
+  padding: 2px 5px;
+  border-radius: 5px;
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tag__close {
+  // position: relative;
+  background: var(--color-main-dark);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .5rem;
+  // padding: 2.5px;
+
+  img {
+    // position: absolute;
+    height: 70%;
+    width: 100%;
+  }
 }

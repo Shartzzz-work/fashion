@@ -1,8 +1,11 @@
 <nav class="navigation wrapper" role="navigation">
   <ul class="navigation__menu">
+    <li class="navigation__menu-item{{ ' active' if (pageName == 'home') }}">
+      <a href="/" class="navigation__menu-link link">Главная</a>
+    </li>
     {% for navigationLink in navigationLinks %}
-      <li class="navigation__menu-item{{ ' active' if (navigationLink == menuLink) }}">
-        <a href="{{ url if (navigationLink == menuLink) }}" class="navigation__menu-link link">{{ navigationLink }}</a>
+      <li class="navigation__menu-item{{ ' active' if (navigationLink == category) }}">
+        <a href="/shop" class="navigation__menu-link link">{{ navigationLink }}</a>
       </li>
     {% endfor %}
   </ul>

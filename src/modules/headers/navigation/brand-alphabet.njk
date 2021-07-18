@@ -1,0 +1,31 @@
+{% set alphabetLetters = [
+  'A',
+  'B',
+  'C',
+  'D',
+  'E',
+  'F',
+  'G',
+  'J',
+  'K',
+  'L',
+  'M',
+  'N',
+  'O',
+  'P',
+  'R',
+  'S',
+  'T',
+  'V',
+  'Y'
+] %}
+
+<nav class="brand-alpabet wrapper">
+  <span>Бренды по алфавиту:</span>
+  <div class="brand-alpabet__letters">
+    {% for letter in alphabetLetters %}
+      <a href="#" class='link'>{{letter}}</a>
+    {% endfor %}
+  </div>
+  <a href="#" class='brand-alpabet__all'>все</a>
+</nav>

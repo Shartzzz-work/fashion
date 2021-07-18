@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html dir="auto" lang="ru">
-
+  
   
   <head>
     <meta charset="UTF-8">
@@ -19,9 +19,9 @@
   </head>
 
 
-<body>
+  <body>
 
-  
+    
   <header class="header header_home">
   
       <div class="subheader">
@@ -38,7 +38,7 @@
         <span class="subheader__title">Корзина: 3</span>
         <div class="subheader__icon">
           <img src="assets/img/cart.svg" alt="Корзина: 3">
-          
+          <span class="subheader__cart-lenght"></span>
         </div>
         <div class="cart-header">
   <header class="cart-header__header">
@@ -72,61 +72,60 @@
   
     <nav class="navigation wrapper" role="navigation">
   <ul class="navigation__menu">
+    <li class="navigation__menu-item active">
+      <a href="/" class="navigation__menu-link link">Главная</a>
+    </li>
     
-      <li class="navigation__menu-item active">
-        <a href="/" class="navigation__menu-link link">Главная</a>
+      <li class="navigation__menu-item">
+        <a href="/shop" class="navigation__menu-link link">Бюстгальтеры</a>
       </li>
     
       <li class="navigation__menu-item">
-        <a href="" class="navigation__menu-link link">Бюстгальтеры</a>
+        <a href="/shop" class="navigation__menu-link link">Трусики</a>
       </li>
     
       <li class="navigation__menu-item">
-        <a href="" class="navigation__menu-link link">Трусики</a>
+        <a href="/shop" class="navigation__menu-link link">Колготки, чулки, леггинсы</a>
       </li>
     
       <li class="navigation__menu-item">
-        <a href="" class="navigation__menu-link link">Колготки, чулки, леггинсы</a>
+        <a href="/shop" class="navigation__menu-link link">Домашняя одежда</a>
       </li>
     
       <li class="navigation__menu-item">
-        <a href="" class="navigation__menu-link link">Домашняя одежда</a>
+        <a href="/shop" class="navigation__menu-link link">Носки, тапочки, ботфорты</a>
       </li>
     
       <li class="navigation__menu-item">
-        <a href="" class="navigation__menu-link link">Носки, тапочки, ботфорты</a>
+        <a href="/shop" class="navigation__menu-link link">Корректирующее белье</a>
       </li>
     
       <li class="navigation__menu-item">
-        <a href="" class="navigation__menu-link link">Корректирующее белье</a>
+        <a href="/shop" class="navigation__menu-link link">Трикотаж</a>
       </li>
     
       <li class="navigation__menu-item">
-        <a href="" class="navigation__menu-link link">Трикотаж</a>
+        <a href="/shop" class="navigation__menu-link link">Эротическое белье</a>
       </li>
     
       <li class="navigation__menu-item">
-        <a href="" class="navigation__menu-link link">Эротическое белье</a>
+        <a href="/shop" class="navigation__menu-link link">Купальники</a>
       </li>
     
       <li class="navigation__menu-item">
-        <a href="" class="navigation__menu-link link">Купальники</a>
+        <a href="/shop" class="navigation__menu-link link">Детское</a>
       </li>
     
       <li class="navigation__menu-item">
-        <a href="" class="navigation__menu-link link">Детское</a>
+        <a href="/shop" class="navigation__menu-link link">Мужчинам</a>
       </li>
     
       <li class="navigation__menu-item">
-        <a href="" class="navigation__menu-link link">Мужчинам</a>
+        <a href="/shop" class="navigation__menu-link link">Термобелье</a>
       </li>
     
       <li class="navigation__menu-item">
-        <a href="" class="navigation__menu-link link">Термобелье</a>
-      </li>
-    
-      <li class="navigation__menu-item">
-        <a href="" class="navigation__menu-link link">Аксессуары</a>
+        <a href="/shop" class="navigation__menu-link link">Аксессуары</a>
       </li>
     
   </ul>
@@ -135,7 +134,7 @@
 </header>
 
 
-  
+    
   
 
 <section class="banner banner_home">
@@ -149,7 +148,9 @@
 </section>
 
 
-  
+    
+
+    
   <main class="main main_header">
   
     
@@ -335,9 +336,13 @@
 </section>
   
 </main>
-
-
   
+    <div class="barnd-list">
+  brandList
+</div>
+  
+
+    
     <footer>
     <div class="footer__social">
 
@@ -352,10 +357,10 @@
     <div class="footer__product">
       <div class="product__list">
         <div class="product__card">
-          <img src="img/product.jpeg" alt="">
+          <img src="assets/img/product/product.jpeg" alt="">
         </div>
         <div class="product__card">
-          <img src="img/product.jpeg" alt="">
+          <img src="assets/img/product/product.jpeg" alt="">
         </div>
       </div>
       <div class="footer__subscribe">
@@ -371,7 +376,7 @@
   </footer>
 
 
-  <script type="module" src="script.js"></script>
-</body>
+    <script type="module" src="script.js"></script>
+  </body>
 
 </html>

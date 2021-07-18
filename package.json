@@ -6,10 +6,11 @@
   "scripts": {
     "clean": "rm -r dist && mkdir dist",
     "sass": "sass --watch --no-source-map src/style.scss:dist/style.css",
-    "serve": "eleventy --serve --watch",
+    "serve": "npx @11ty/eleventy --serve --watch",
     "dev": "yarn run serve & yarn run sass"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "terser": "^5.7.1"
   }
 }

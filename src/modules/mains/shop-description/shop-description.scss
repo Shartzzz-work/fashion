@@ -1,0 +1,17 @@
+@use '../../../scss/vars.scss';
+
+.shop-description {
+  background: var(--color-bg-text-block);
+  padding: 1.5rem;
+}
+
+.shop-description__wrapper  {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.shop-description__title {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}

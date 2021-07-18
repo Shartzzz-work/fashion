@@ -6,10 +6,8 @@
 }
 
 .navigation__menu-item {
+  position: relative;
   height: 50px;
-  cursor: pointer;
-  display: flex;
-  padding: 0 1rem;
   font-size: 0.7rem;
 
   &:hover {
@@ -22,7 +20,35 @@
 }
 
 .navigation__menu-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  place-self: center;
+  left: 0;
   font-size: 0.7rem;
+  height: 100%;
+  width: 100%;
+  padding: 0 0.8rem;
+}
+
+// Бренды по алфавиту
+.brand-alpabet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brand-alpabet__letters {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10rem 0 3rem;
+}
+
+.brand-alpabet__all {
+  text-decoration: underline;
+  color: unset;
 }

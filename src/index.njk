@@ -1,9 +1,7 @@
 {% set lang = 'ru' %}
-
-{% set menuLink = "Главная" %}
+{% set imgPath = 'assets/img' %}
 
 {% set pageName = 'home' %}
-{% set url = '/'%}
 {% set userTitle = 'Войти' %}
 {% set cartTitle = 'Корзина: 3' %}
 {% set loginImg = 'user-login.svg' %}
@@ -11,7 +9,6 @@
 {% set searchImg = 'search.svg' %}
 
 {% set navigationLinks = [
-  "Главная",
   "Бюстгальтеры",
   "Трусики",
   "Колготки, чулки, леггинсы",
@@ -30,7 +27,7 @@
 {% extends "./layout/layout.njk" %}
 
 {% block head %}
-  {% include "./layout/head/head.njk" %}
+  {% include "./layout/head.njk" %}
 {% endblock %}
 
 {% block header %}
@@ -43,6 +40,9 @@
 
 {% block main %}
   {% include "./modules/mains/main.njk" %}
+  {% block brandList %}
+    {% include "./modules/brand-list/band-list.njk" %}
+  {% endblock %}
 {% endblock %}
 
 {% block footer %}
