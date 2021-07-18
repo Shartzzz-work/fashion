@@ -35,6 +35,11 @@
 
 // shop
 
-.products__list_shop {
-  padding: 1rem 0;
+.products__list {
+  display: flex;
 }
+
+.products__list_shop {
+  padding-top: 1rem;
+}
+

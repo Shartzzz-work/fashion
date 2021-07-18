@@ -1,0 +1,56 @@
+{% set lang = 'ru' %}
+{% set startPath = '../' %}
+{% set imgPath = '../assets/img' %}
+
+{% set cartCount = '3' %}
+
+{% set category = "Корзина" %}
+
+{% set pageName = 'cart' %}
+{% set url = '/cart'%}
+{% set userTitle = 'Войти' %}
+{% set cartTitle = '4.500,00' %}
+{% set loginImg = 'user-login.svg' %}
+{% set cartImg = 'cart.svg' %}
+{% set searchImg = 'search.svg' %}
+
+{% set navigationLinks = [
+  "Бюстгальтеры",
+  "Трусики",
+  "Колготки...",
+  "Домашняя...",
+  "Носки, тапочки...",
+  "Корректирующее",
+  "Трикотаж",
+  "Эротическое...",
+  "Купальники",
+  "Детское",
+  "Мужчинам",
+  "Термобелье",
+  "Аксессуары"
+] %}
+
+{% extends "../layout/layout.njk" %}
+
+{% block head %}
+  {% include "../layout/head.njk" %}
+{% endblock %}
+
+{% block header %}
+  {% include "../modules/headers/header.njk" %}
+  {# {% block brandAlpabet %}
+    {% include "../modules/headers/navigation/brand-alphabet.njk" %}
+  {% endblock %} #}
+{% endblock %}
+
+{% block breadcrumbs %}
+  {% include "../modules/breadcrumbs/breadcrumbs.njk" %}
+{% endblock %}
+
+{% block main %}
+  {% include "../modules/mains/main-cart.njk" %}
+{% endblock %}
+
+{% block footer %}
+  {% include "../modules/footers/footer.njk" %}
+{% endblock %}
