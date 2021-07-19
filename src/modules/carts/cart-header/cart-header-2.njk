@@ -1,0 +1,30 @@
+<div class="cart-header-2">
+  <span class="cart-header__arrow"></span>
+  <div class="cart-header__products-list-2">
+
+    {% include "../../products/product-min.njk" %}
+    {% include "../../products/product-min.njk" %}
+    {% include "../../products/product-min.njk" %}
+
+  </div>
+  <footer class="cart-header__footer-2">
+    <div class="cart-header__summ-2">
+      <h3 class='cart-header__title-2'>Моя корзина</h3>
+      <i>{{cartPrice}}
+        {{rubble}}</i>
+      <span>{{cartCount}} товара</span>
+    </div>
+
+    <div class="cart-header__cartAndPay">
+      <a href="/cart" class='cart-header__icon-cart link'>
+        <img src="../assets/img/cart2.svg" alt="в корзину"><br>
+        <span>В корзину</span>
+      </a>
+
+      <a href="#" class='cart-header__icon-card link'>
+        <img src="../assets/img/credit-card.svg" alt="в корзину"><br>
+        <span>Оплата</span>
+      </a>
+    </div>
+  </footer>
+</div>
