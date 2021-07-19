@@ -1,7 +1,7 @@
 <section class="cart-content wrapper">
   <div class="cart-content__product-list">
     <div class="cart-content__product-list_title">
-      <h2>Моя корзина</h2>
+      <h3>Моя корзина:</h3>
       <div class="cart-content__product-list_summ">
         <span>3 товара</span>
         <i>{{cartPrice}}
@@ -17,49 +17,46 @@
     {% include "../products/product-min.njk" %}
     {% include "../products/product-min.njk" %}
   </div>
-  <form class="cart-content__user">
-    <h3>Доставка:</h3>
-    <div class="cart-content__user-data">
-      <label>Полное имя:<input type="text" name='fullName'></label>
-      <label>Телефон:<input type="tel" name='tel'></label>
-      <label>Email:<input type="email" name='email'></label>
-    </div>
-
-    <div class="cart-content__user-address">
+  <div class="cart-content__user-data">
+    <form class="cart-content__user">
+      <h3>Доставка:</h3>
       <div>
-        <label>Страна:<input type="text" name='country'></label>
-        <label>Город:<input type="text" name='city'></label>
-      </div>
-      <label>Адрес:<input type="text" name='address'></label>
-    </div>
-  </form>
-  <div class="cart-content__payments">
-    <h3>Оплата:</h3>
-    <div class="credit-card">
-      <img src="../assets/img/search.svg" alt="mastercard">
-      <span>1122 3344 5566 7788</span>
-      <div>
-        <span>Ivan Ivanov</span>
-        <span>04/19</span>
-      </div>
-    </div>
-
-    <form class="cart-content__card">
-      <label>Имя на карте<input type="text" name='cardName'></label>
-      <label>Номер карты<input type="number" name='cardNumder'></label>
-      <div class="">
-        <label>Месяц<input type="month" name='cardMonth'></label>
-        <label>Год
-        <select name="cardYear">
-            <option value="2021">2021</option>
-            <option value="2020">2020</option>
-            <option value="2019">2019</option>
-          </select>
-        </label>
-        <label>CVV<input type="number" name='cardCVV'></label>
+        <label>Полное имя:<input type="text" name='fullName'></label>
+        <label>Телефон:<input type="tel" name='tel'></label>
+        <label>Email:<input type="email" name='email'></label>
       </div>
 
-      <input type="submit" value='Оплатить'>
+      <div class="cart-content__user-address">
+        <div>
+          <label>Страна:<input type="text" name='country'></label>
+          <label>Город:<input type="text" name='city'></label>
+        </div>
+        <label>Адрес:<input type="text" name='address'></label>
+      </div>
     </form>
+    <div class="cart-content__payments">
+      <h3>Оплата:</h3>
+      <div class="credit-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="mastercard">
+        <span>1122 3344 5566 7788</span>
+        <div>
+          <span>Ivan Ivanov</span>
+          <span>01/21</span>
+        </div>
+      </div>
+
+      <form class="cart-content__card">
+        <label>Имя на карте:<input type="text" name='cardName'></label>
+        <label>Номер карты:<input type="text" name='cardNumder'></label>
+
+        <div>
+          <label>Действительна до:<input type="month" name='cardMonth' value="2021-01"></label>
+          <label>CVV<input type="text" name='cardCVV'></label>
+        </div>
+
+        <input type="submit" value='Оплатить'>
+      </form>
+    </div>
   </div>
+
 </section>

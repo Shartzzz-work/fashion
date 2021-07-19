@@ -101,22 +101,31 @@
 .cart-content__product-list {
   padding: 1rem;
   border-radius: 1rem;
-}
-
-.cart-content__product-list {
   background: #e4e4e4;
+  max-width: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .cart-content__product-list_title {
+  display: grid;
+  width: 100%;
   padding-bottom: 2rem;
+}
+
+.cart-content__user-data {
+  display: flex;
+  justify-content: space-between;
+  width: 720px;
+  height: 550px;
 }
 
 .cart-content__user,
 .cart-content__payments {
   background: var(--color-main-dark);
   width: 350px;
-  height: 550px;
-  padding: 2rem;
+  padding: 1rem 2rem;
   border-radius: 10px;
   color: #fff;
   display: grid;
@@ -130,31 +139,27 @@
     background: none;
     border: none;
     border-bottom: 1px solid #fff;
-    color: inherit;
     font-size: 1rem;
+    color: unset;
   }
-}
 
-.cart-content__user {
-  grid-template-rows: 4rem 1fr auto;
-}
-
-.cart-content__user-data {
   label {
     display: grid;
     padding-bottom: 2rem;
   }
 }
 
+.cart-content__user {
+  grid-template-rows: 4rem 1fr 1fr;
+}
+
 .cart-content__user-address {
-  height: 100%;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
 
   div {
     display: flex;
     justify-content: space-between;
     height: auto;
-    padding-bottom: 3rem;
 
     label {
       width: 40%;
@@ -172,25 +177,58 @@
   max-width: 300px;
   height: 150px;
   border-radius: 10px;
-  padding: 1rem;
+  padding: .7rem;
   color: #000;
+  text-transform: uppercase;
 
   display: grid;
   align-items: center;
-  // align-content: center;
-  // justify-content: space-between;
 
   img {
-    height: 50px;
+    height: 40px;
+    justify-self: end;
   }
 
   span {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   div {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.cart-content__payments {
+  grid-template-rows: 1fr 4fr auto;
+}
+
+.cart-content__card {
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    & label:last-child {
+      width: 25%;
+      text-align: center;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    height: 3rem;
+    background: var(--color-main-medium);
+    color: #000;
   }
 }
