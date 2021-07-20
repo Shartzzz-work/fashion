@@ -10,7 +10,7 @@
   --color-bg-new: #7fbfff;
   --color-bg-sale: #ffcc3b;
   --color-tag: #d1d1d1;
-  --color-size: #e04693d5;
+  --color-size: #b4b4b4d5;
   --color-line: rgba(0, 0, 0, 0.205);
   --color-bg-credit-card: var(--color-main-medium);
 }
@@ -146,20 +146,6 @@
 .tag__close img {
   height: 70%;
   width: 100%;
-}
-
-.size {
-  background: var(--color-size);
-  padding: 2px 5px;
-  border-radius: 0 5px;
-  margin: 0.45rem 0.2rem 0 0.2rem;
-  color: #fff;
-  font-size: 0.9rem;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
-.size:hover {
-  transform: scale(1.2);
 }
 
 .subheader {
@@ -663,8 +649,26 @@
   justify-content: space-evenly;
   padding-top: 1rem;
 }
-.product__details_size span:not(.size) {
+.product__details_size span:not(.product__size) {
   width: 100%;
+}
+
+.product__size {
+  background: var(--color-size);
+  padding: 2px 5px;
+  border-radius: 0 5px;
+  margin: 0.45rem 0.2rem 0 0.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.product__size:hover {
+  transform: scale(1.2);
+}
+.product__size.active {
+  transform: scale(1.2);
+  color: #fff;
+  background: var(--color-main-dark);
 }
 
 .product__details-color {
