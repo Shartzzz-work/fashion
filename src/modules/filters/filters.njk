@@ -1,4 +1,4 @@
-{% from "../../_components/dropdown/dropdown.njk" import dropdown %}
+{% from "../_components/dropdown/dropdown.njk" import dropdown %}
 
 <div class="shop-filters">
   <div class="shop-filters__wrapper wrapper">
@@ -10,9 +10,9 @@
     <div class="shop-filters__common">
       <div class="shop-filters__common-price">
         <label>
-          <span>от: </span><input type="text"></label>
+          <span>от: </span><input type="text" class="shop-filters__common-price-input"></label>
         <label>
-          <span>до: </span><input type="text"></label>
+          <span>до: </span><input type="text" class="shop-filters__common-price-input"></label>
       </div>
 
       <div class="dropdown">

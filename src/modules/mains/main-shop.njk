@@ -4,10 +4,22 @@
   {% endblock %}
 
   {% block filters %}
-    {% include "./filters/filters.njk" %}
+    {% include "../filters/filters.njk" %}
   {% endblock %}
 
-  {% block products %}
-    {% include "./products/products-shop.njk" %}
+<div class="products__list products__list_{{pageName}} wrapper">
+  {% block brafitting %}
+    {% include "../filters/brafitting.njk" %}
   {% endblock %}
+  {% block product %}
+    {% include "../products/product.njk" %}
+    {% include "../products/product.njk" %}
+    {% include "../products/product.njk" %}
+    {% include "../products/product.njk" %}
+  {% endblock %}
+</div>
+
+{# <div class="products__all">
+  <a href="#" class="link">Все товары --></a>
+</div> #}
 </main>

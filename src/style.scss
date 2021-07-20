@@ -2,6 +2,8 @@
 @use 'scss/components.scss';
 @use 'scss/modules.scss';
 
+@use 'modules/products/product-min.scss';
+
 * {
   margin: 0;
   padding: 0;

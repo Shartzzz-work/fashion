@@ -29,6 +29,13 @@
   }
 }
 
+.shop-filters__common-price-input {
+  border: none;
+  height: 1.5rem;
+  border-radius: 10px;
+  width: 150px;
+}
+
 .shop-filters-tags {
   padding: 0.5rem 1.5rem;
   border-bottom: 1px solid var(--color-line);
@@ -39,9 +46,13 @@
 }
 
 .brafitting {
-  border: 1px solid;
   border-radius: 0.5rem;
   padding: 1rem;
+  height: 460px;
+  width: 320px;
+  margin-right: 1rem;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .brafitting__title {

@@ -1,0 +1,57 @@
+{% set lang = 'ru' %}
+{% set startPath = '../../' %}
+{% set imgPath = '../../assets/img' %}
+
+{% set cartPrice = '4.500,00' %}
+{% set cartTitle = cartPrice %}
+{% set cartCount = '3' %}
+
+{% set category = "Бюстгальтеры" %}
+
+{% set pageName = 'shop' %}
+{% set url = '/shop'%}
+{% set userTitle = 'Войти' %}
+{% set loginImg = 'user-login.svg' %}
+{% set cartImg = 'cart.svg' %}
+{% set searchImg = 'search.svg' %}
+
+{% set navigationLinks = [
+  "Бюстгальтеры",
+  "Трусики",
+  "Колготки...",
+  "Домашняя...",
+  "Носки, тапочки...",
+  "Корректирующее",
+  "Трикотаж",
+  "Эротическое...",
+  "Купальники",
+  "Детское",
+  "Мужчинам",
+  "Термобелье",
+  "Аксессуары"
+] %}
+
+{% extends "../layout/layout.njk" %}
+
+{% block head %}
+  {% include "../layout/head.njk" %}
+{% endblock %}
+
+{% block header %}
+  {% include "../modules/headers/header.njk" %}
+  {% block brandAlpabet %}
+    {% include "../modules/headers/navigation/brand-alphabet.njk" %}
+  {% endblock %}
+{% endblock %}
+
+{% block breadcrumbs %}
+  {% include "../modules/breadcrumbs/breadcrumbs.njk" %}
+{% endblock %}
+
+{% block main %}
+  {% include "../modules/mains/main-product.njk" %}
+{% endblock %}
+
+{% block footer %}
+  {% include "../modules/footers/footer.njk" %}
+{% endblock %}

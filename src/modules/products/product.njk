@@ -1,62 +1,42 @@
-<div class="product">
-  <div class="product__img">
-    <span class="span-new">Новинка</span>
-    {# <span class="span-sale">Распродажа</span> #}
-    <img src="{{startPath}}assets/img/product/product.jpeg" alt="">
-  </div>
+<div class="product_shop">
+<span class="product__new">Новинка</span>
+<span class="product__sale">Скидка</span>
+  <img src="../assets/img/product/product.jpeg" alt="изображение товара" class="product__img">
+
   <div class="product__details">
-    <div class="product__details_buttons">
-      <a href="#" class="button">в корзину</a>
+    <div class="product__details-color">
+      <span class="product__color black active"></span>
+      <span class="product__color white"></span>
+      <span class="product__color mint"></span>
     </div>
-    <div>
-      <div class="product__details_content">
-        <a href="#">COOKIE semisoftsidesupport</a>
-        <h5>Бюстгальтер полупоролон</h5>
-        <div class="product__price">
-          <span>4000 руб.</span>
-          <p>3000 руб.</p>
-        </div>
+    <hr>
+    <h4>
+      <a href="/shop/product" class='link'> COOKIE semisoftsidesupport</a>
+    </h4>
+    <span>Бюстгальтер полупоролон</span>
+    <i>1.500,00 {{rubble}}</i>
 
-        <div class="product__details_color">
-          <h5>Цвет:</h5>
-          <a href="" style="background-color: aqua;"></a>
-          <a href="" style="background-color: rgb(207, 162, 104);"></a>
-          <a href="" style="background-color: rgb(114, 104, 207);"></a>
-          <a href="" style="background-color: rgb(104, 207, 121);"></a>
-          <a href="" style="background-color: rgb(192, 207, 104);"></a>
-        </div>
-      </div>
-      <div class="product__details_size">
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>115G</span>
-      </div>
+    <div class="product__details_size">
+      {# <span>Размер:</span><br> #}
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
     </div>
-
+    <hr>
+    <button class='product__cart-button'>В корзину</button>
   </div>
 </div>

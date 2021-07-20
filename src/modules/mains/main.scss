@@ -1,4 +1,9 @@
 @use './category/category.scss';
-@use './products/products.scss';
 @use './shop-description/shop-description.scss';
-@use './filters/filters.scss'
+
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

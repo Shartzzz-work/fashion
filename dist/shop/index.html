@@ -112,12 +112,12 @@
 
     <div class="cart-header__cartAndPay">
       <a href="/cart" class='cart-header__icon-cart link'>
-        <img src="../assets/img/cart2.svg" alt="в корзину"><br>
+        <img src="..//assets/img/cart2.svg" alt="в корзину"><br>
         <span>В корзину</span>
       </a>
 
       <a href="#" class='cart-header__icon-card link'>
-        <img src="../assets/img/credit-card.svg" alt="в корзину"><br>
+        <img src="..//assets/img/credit-card.svg" alt="в корзину"><br>
         <span>Оплата</span>
       </a>
     </div>
@@ -307,9 +307,9 @@
     <div class="shop-filters__common">
       <div class="shop-filters__common-price">
         <label>
-          <span>от: </span><input type="text"></label>
+          <span>от: </span><input type="text" class="shop-filters__common-price-input"></label>
         <label>
-          <span>до: </span><input type="text"></label>
+          <span>до: </span><input type="text" class="shop-filters__common-price-input"></label>
       </div>
 
       <div class="dropdown">
@@ -333,10 +333,9 @@
 </div>
   
 
+<div class="products__list products__list_shop wrapper">
   
-    <div class="products__list products__list_shop wrapper">
-  
-    <div class="product brafitting">
+    <div class="brafitting">
   <h2 class='brafitting__title'>Виртуальный брафиттинг</h2>
   <form class="brafitting__range-block">
     <label>Обхват груди, см: <span>0</span><input type="range" min="0" max="200" value="0" class="brafitting__range"></label>
@@ -352,73 +351,178 @@
 </div>
   
   
-    <div class="product">
-  <div class="product__img">
-    <span class="span-new">Новинка</span>
-    
-    <img src="../assets/img/product/product.jpeg" alt="">
-  </div>
+    <div class="product_shop">
+<span class="product__new">Новинка</span>
+<span class="product__sale">Скидка</span>
+  <img src="../assets/img/product/product.jpeg" alt="изображение товара" class="product__img">
+
   <div class="product__details">
-    <div class="product__details_buttons">
-      <a href="#" class="button">в корзину</a>
+    <div class="product__details-color">
+      <span class="product__color black active"></span>
+      <span class="product__color white"></span>
+      <span class="product__color mint"></span>
     </div>
-    <div>
-      <div class="product__details_content">
-        <a href="#">COOKIE semisoftsidesupport</a>
-        <h5>Бюстгальтер полупоролон</h5>
-        <div class="product__price">
-          <span>4000 руб.</span>
-          <p>3000 руб.</p>
-        </div>
+    <hr>
+    <h4>
+      <a href="/shop/product" class='link'> COOKIE semisoftsidesupport</a>
+    </h4>
+    <span>Бюстгальтер полупоролон</span>
+    <i>1.500,00 ₽</i>
 
-        <div class="product__details_color">
-          <h5>Цвет:</h5>
-          <a href="" style="background-color: aqua;"></a>
-          <a href="" style="background-color: rgb(207, 162, 104);"></a>
-          <a href="" style="background-color: rgb(114, 104, 207);"></a>
-          <a href="" style="background-color: rgb(104, 207, 121);"></a>
-          <a href="" style="background-color: rgb(192, 207, 104);"></a>
-        </div>
-      </div>
-      <div class="product__details_size">
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>65G</span>
-        <span>115G</span>
-      </div>
+    <div class="product__details_size">
+      
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
     </div>
+    <hr>
+    <button class='product__cart-button'>В корзину</button>
+  </div>
+</div>
+    <div class="product_shop">
+<span class="product__new">Новинка</span>
+<span class="product__sale">Скидка</span>
+  <img src="../assets/img/product/product.jpeg" alt="изображение товара" class="product__img">
 
+  <div class="product__details">
+    <div class="product__details-color">
+      <span class="product__color black active"></span>
+      <span class="product__color white"></span>
+      <span class="product__color mint"></span>
+    </div>
+    <hr>
+    <h4>
+      <a href="/shop/product" class='link'> COOKIE semisoftsidesupport</a>
+    </h4>
+    <span>Бюстгальтер полупоролон</span>
+    <i>1.500,00 ₽</i>
+
+    <div class="product__details_size">
+      
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+    </div>
+    <hr>
+    <button class='product__cart-button'>В корзину</button>
+  </div>
+</div>
+    <div class="product_shop">
+<span class="product__new">Новинка</span>
+<span class="product__sale">Скидка</span>
+  <img src="../assets/img/product/product.jpeg" alt="изображение товара" class="product__img">
+
+  <div class="product__details">
+    <div class="product__details-color">
+      <span class="product__color black active"></span>
+      <span class="product__color white"></span>
+      <span class="product__color mint"></span>
+    </div>
+    <hr>
+    <h4>
+      <a href="/shop/product" class='link'> COOKIE semisoftsidesupport</a>
+    </h4>
+    <span>Бюстгальтер полупоролон</span>
+    <i>1.500,00 ₽</i>
+
+    <div class="product__details_size">
+      
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+    </div>
+    <hr>
+    <button class='product__cart-button'>В корзину</button>
+  </div>
+</div>
+    <div class="product_shop">
+<span class="product__new">Новинка</span>
+<span class="product__sale">Скидка</span>
+  <img src="../assets/img/product/product.jpeg" alt="изображение товара" class="product__img">
+
+  <div class="product__details">
+    <div class="product__details-color">
+      <span class="product__color black active"></span>
+      <span class="product__color white"></span>
+      <span class="product__color mint"></span>
+    </div>
+    <hr>
+    <h4>
+      <a href="/shop/product" class='link'> COOKIE semisoftsidesupport</a>
+    </h4>
+    <span>Бюстгальтер полупоролон</span>
+    <i>1.500,00 ₽</i>
+
+    <div class="product__details_size">
+      
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+      <span class="size">75G</span>
+    </div>
+    <hr>
+    <button class='product__cart-button'>В корзину</button>
   </div>
 </div>
   
 </div>
 
 
-  
 </main>
 
     

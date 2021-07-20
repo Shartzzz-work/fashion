@@ -3,9 +3,21 @@
     {% include "./category/category.njk" %}
   {% endblock %}
 
-  {% block products %}
-    {% include "./products/products.njk" %}
-  {% endblock %}
+<section class="products products_{{pageName}}">
+  <nav class="products__menu wrapper">
+    <a href="#" class="products__menu-item active">Новинки</a>
+    <a href="#" class="products__menu-item">Популярное</a>
+    <a href="#" class="products__menu-item">Распродажа</a>
+  </nav>
+  <div class="products__list wrapper">
+    {% block product %}
+      {% include "../products/product.njk" %}
+    {% endblock %}
+  </div>
+  <div class="products__all">
+    <a href="#" class="link">Все товары --></a>
+  </div>
+</section>
 
   {% block bannerSale %}
     {% include "../banners/banner-sale.njk" %}
